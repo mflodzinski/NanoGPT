@@ -1,0 +1,17 @@
+data:
+    file_path: data/input.txt
+    train_ratio: 0.85
+    batch_size: 16
+    random_seed: 1337
+train:
+    optim: AdamW
+    lr: 0.001
+    epochs: 5000
+model:
+  embd_size: 70
+  block_size: 20
+  num_heads: 5
+  num_layers: 5
+  dropout: 0.2
+rest:
+    max_new_tokens: 1000
